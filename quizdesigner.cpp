@@ -28,15 +28,16 @@ void QuizDesigner::on_createButton_clicked() {
         //cout << "Name of quiz!!: " << name_s << endl;
         qDebug() << "Name of quiz: " << name << '\n';
        // QuizDesigner::on_addQuestButton_clicked();
-
+        
         dialog.numQuestLabel->setNum(numQuestions);
         //dialog.exec();
 
-        //if (!name.isEmpty()) {
-        //    QListWidgetItem* item = new QListWidgetItem(name, ui.quizList);
-        //    //item->setData(Qt::UserRole, numQuestions);
-        //    //ui.quizList->setCurrentItem(item);
-        //}
+        if (!name.isEmpty()) {
+            QListWidgetItem* item = new QListWidgetItem(name, ui.quizList);
+            //item->setData(Qt::UserRole, numQuestions);
+            //ui.quizList->setCurrentItem(item);
+        }
+
 
        // QString numQuestions = dialog.numQuestEdit->text();
         
@@ -47,15 +48,29 @@ void QuizDesigner::on_createButton_clicked() {
         
 
     }
+
+    //QuizDesigner::on_addQuestButton_clicked();
+
 }
 
 void QuizDesigner::on_addQuestButton_clicked() {
-    AddQuestions dialog(this);
-    dialog.exec();
+    AddQuestions dialog2(this);
+    dialog2.exec();
 }
 
 void QuizDesigner::on_saveButton_clicked(int numQuest) {
     numQuest++;
+}
+
+void QuizDesigner::on_quizList_currentItemChanged() {
+    QListWidgetItem* curItem = ui.quizList->currentItem();
+    if (curItem) {
+        ui.nameLabel->setText("Name: " + curItem->text());
+    }
+    else {
+        ui.nameLabel->setText("<No item select>");
+    }
+
 }
 
 
