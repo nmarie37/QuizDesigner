@@ -97,14 +97,17 @@
   <ItemGroup>
     <QtRcc Include="quizdesigner.qrc" />
     <QtUic Include="adddialog.ui" />
+    <QtUic Include="addquestions.ui" />
     <QtUic Include="quizdesigner.ui" />
     <QtMoc Include="quizdesigner.h" />
     <ClCompile Include="adddialog.cpp" />
+    <ClCompile Include="addquestions.cpp" />
     <ClCompile Include="quizdesigner.cpp" />
     <ClCompile Include="main.cpp" />
     <None Include="QuizDesigner.ico" />
     <ResourceCompile Include="QuizDesigner.rc" />
     <QtMoc Include="adddialog.h" />
+    <QtMoc Include="addquestions.h" />
     <ClInclude Include="stdafx.h" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">Create</PrecompiledHeader>

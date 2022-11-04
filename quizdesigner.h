@@ -9,7 +9,9 @@ class QuizDesigner : public QWidget
 
 private slots:
     void on_createButton_clicked();
-
+    void on_addQuestButton_clicked();
+    void on_saveButton_clicked(int numQuest);
+    
 
 public:
     QuizDesigner(QWidget *parent = nullptr);
