@@ -6,56 +6,58 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>411</width>
-    <height>239</height>
+    <width>451</width>
+    <height>322</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Create Quiz</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_4">
-   <item row="0" column="0" colspan="8">
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QLabel" name="nameText">
-       <property name="text">
-        <string>Name:</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="nameEdit"/>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>18</width>
-           <height>21</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="addQuestButton">
-         <property name="text">
-          <string>Add Question</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QLabel" name="nameText">
+     <property name="text">
+      <string>Name:</string>
+     </property>
+    </widget>
    </item>
-   <item row="1" column="0" rowspan="2" colspan="8">
-    <layout class="QHBoxLayout" name="horizontalLayout_5"/>
+   <item row="0" column="1" colspan="2">
+    <widget class="QLineEdit" name="nameEdit"/>
    </item>
-   <item row="2" column="2">
+   <item row="0" column="3">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>93</width>
+       <height>21</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="4" colspan="2">
+    <widget class="QPushButton" name="addQuestButton">
+     <property name="text">
+      <string>Add Question</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>17</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="5">
     <spacer name="verticalSpacer">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
@@ -63,49 +65,38 @@
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
-       <height>149</height>
+       <height>18</height>
       </size>
      </property>
     </spacer>
    </item>
-   <item row="3" column="0">
-    <layout class="QHBoxLayout" name="horizontalLayout_4"/>
-   </item>
-   <item row="3" column="1" colspan="2">
+   <item row="4" column="0" colspan="2">
     <widget class="QLabel" name="numQuestionsLabel">
      <property name="text">
       <string>Number of Questions:</string>
      </property>
     </widget>
    </item>
-   <item row="3" column="4">
+   <item row="4" column="2" colspan="3">
     <spacer name="horizontalSpacer_2">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>102</width>
+       <width>168</width>
        <height>20</height>
       </size>
      </property>
     </spacer>
    </item>
-   <item row="3" column="6">
+   <item row="4" column="5">
     <widget class="QLineEdit" name="lineEdit"/>
    </item>
+   <item row="2" column="0" colspan="6">
+    <widget class="QListWidget" name="questList"/>
+   </item>
   </layout>
-  <widget class="QWidget" name="gridLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>9</x>
-     <y>9</y>
-     <width>2</width>
-     <height>2</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_3"/>
-  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

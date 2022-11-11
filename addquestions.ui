@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>452</width>
+    <width>456</width>
     <height>366</height>
    </rect>
   </property>
@@ -74,16 +74,6 @@
     </item>
    </layout>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>130</y>
-     <width>331</width>
-     <height>151</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -122,6 +112,16 @@
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLineEdit" name="qlineEdit">
+   <property name="geometry">
+    <rect>
+     <x>52</x>
+     <y>131</y>
+     <width>371</width>
+     <height>171</height>
+    </rect>
+   </property>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
