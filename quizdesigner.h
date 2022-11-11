@@ -3,6 +3,7 @@
 #include <QtWidgets/QWidget>
 #include "ui_quizdesigner.h"
 
+
 class QuizDesigner : public QWidget
 {
     Q_OBJECT
