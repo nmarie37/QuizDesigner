@@ -69,7 +69,7 @@
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <QtMoc>
@@ -108,7 +108,9 @@
     <ResourceCompile Include="QuizDesigner.rc" />
     <QtMoc Include="adddialog.h" />
     <QtMoc Include="addquestions.h" />
+    <ClInclude Include="datastore.h" />
     <ClInclude Include="stdafx.h" />
+    <ClCompile Include="datastore.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">Create</PrecompiledHeader>
