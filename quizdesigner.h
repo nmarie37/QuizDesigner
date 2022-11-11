@@ -12,7 +12,7 @@ private slots:
     void on_createButton_clicked();
     void on_addQuestButton_clicked();
     void on_saveButton_clicked(int numQuest);
-    void on_quizList_currentItemChanged();
+    //void on_quizList_currentItemChanged();
     
 
 public:

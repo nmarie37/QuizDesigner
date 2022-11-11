@@ -7,12 +7,12 @@ using namespace std;
 
 class datastore {
 private:
-	struct quiz
-	{	
+//	struct quiz
+	//{	
 		string name;
 		vector<string> questions;
-	}; 
-	struct quiz Quiz;
+	//}; 
+	//struct quiz Quiz;
 	//{
 	//	string name;
 //		vector<string> questions;
@@ -22,6 +22,8 @@ private:
 public:
 	string getName();
 	void setName(string name);
+	void setQuestion(string quest);
+	string getQuestion(int i);
 
 	datastore();
 	~datastore();

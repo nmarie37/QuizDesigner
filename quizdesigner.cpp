@@ -48,11 +48,11 @@ void QuizDesigner::on_createButton_clicked() {
             QuizDesigner::on_addQuestButton_clicked();
             }
 
-        if (!name.isEmpty()) {
-            QListWidgetItem* item = new QListWidgetItem(name, ui.quizList);
+        //if (!name.isEmpty()) {
+        //    QListWidgetItem* item = new QListWidgetItem(name, ui.quizList);
             //item->setData(Qt::UserRole, numQuestions);
             //ui.quizList->setCurrentItem(item);
-        }
+       // }
 
         cout << "Number of questions entered by user: " << qinput_s << "\n";
        // QString numQuestions = dialog.numQuestEdit->text();
@@ -72,15 +72,72 @@ void QuizDesigner::on_createButton_clicked() {
 
 void QuizDesigner::on_addQuestButton_clicked() {
     AddQuestions dialog2(this);
-    dialog2.exec();
+    AddDialog dialog3(this);
+    
+    if (dialog2.exec())
+    {
+        QString quest = dialog2.qlineEdit->text();
+        string quest_s = quest.toLocal8Bit().constData();
+        d.setQuestion(quest_s);
+        cout << "Entered question is: " << d.getQuestion(0) << "\n";
+
+        if (dialog3.exec()) {
+
+            if (!quest.isEmpty()) {
+                QListWidgetItem* item = new QListWidgetItem(quest, dialog3.questList);
+                //AddDialog curItem = dialog3
+                item->setData(Qt::UserRole, quest);
+                dialog3.questList->setCurrentItem(item);
+
+                //dialog3.questList->row(item);
+            }
+        }
+    }
+
+
+  //  AddDialog dialog3(this);
+    
+  //  if (dialog3.exec()) {
+  //      QString quest = dialog3.questList->text();
+ //   }
+    
+    
+    //d.setQuestion = dialog2.questLi
+    //QListWidgetItem* curItem = dialog3.
     numQuestions++;
 }
+
+
+
+
+//void AddressBook::on_addButton_clicked()
+//{
+//    AddDialog dialog(this);
+//
+//    if (dialog.exec())
+//    {
+//        QString name = dialog.nameEdit->text();
+//        QString email = dialog.emailEdit->text();
+//
+//        if (!name.isEmpty() && !email.isEmpty())
+//        {
+//            QListWidgetItem* item = new QListWidgetItem(name, ui.addressList);
+//            item->setData(Qt::UserRole, email);
+//            ui.addressList->setCurrentItem(item);
+//        }
+//    }
+//}
+
+
+
+
+
 
 void QuizDesigner::on_saveButton_clicked(int numQuest) {
     numQuest++;
 }
 
-void QuizDesigner::on_quizList_currentItemChanged() {
+/*void QuizDesigner::on_quizList_currentItemChanged() {
     QListWidgetItem* curItem = ui.quizList->currentItem();
     if (curItem) {
         ui.nameLabel->setText("Name: " + curItem->text());
@@ -89,5 +146,5 @@ void QuizDesigner::on_quizList_currentItemChanged() {
         ui.nameLabel->setText("<No item select>");
     }
 
-}
+} */
 

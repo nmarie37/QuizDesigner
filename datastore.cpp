@@ -5,20 +5,28 @@
 using namespace std;
 
 datastore::datastore() {
-	struct quiz {
+	//struct quiz {
 		string name = "";
 		vector<string> questions;
-	};
+	//};
 
 }
 
 datastore::~datastore() {};
 
 string datastore::getName() {
-	return Quiz.name;
+	return name;
 }
 
-void datastore::setName(string name) {
-	Quiz.name = name;
+void datastore::setName(string name_s) {
+	name = name_s;
 	//quizzes.assign(i, name);
+}
+
+void datastore::setQuestion(string quest) {
+	questions.push_back(quest);
+}
+
+string datastore::getQuestion(int i) {
+	return questions[i];
 }
