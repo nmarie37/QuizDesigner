@@ -1,29 +1,25 @@
 #pragma once
 #include <vector>
-#include <iostream>
 #include <fstream>
 
 using namespace std;
 
 class datastore {
 private:
-//	struct quiz
-	//{	
-		string name;
-		vector<string> questions;
-	//}; 
-	//struct quiz Quiz;
-	//{
-	//	string name;
-//		vector<string> questions;
-	//};
+	int numques;
+	string title;
+	vector<string> questions;
+	vector<string> types;
 
-	
 public:
-	string getName();
-	void setName(string name);
+	string getTitle();
+	void setTitle(string title);
 	void setQuestion(string quest);
 	string getQuestion(int i);
+	void setType(string quest);
+	string getType(int i);
+	void printTypes();
+	void printQues();
 
 	datastore();
 	~datastore();

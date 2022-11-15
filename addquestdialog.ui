@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>AddQuestDialog</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>22</x>
@@ -111,8 +111,8 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>285</x>
-     <y>251</y>
+     <x>361</x>
+     <y>243</y>
     </hint>
     <hint type="destinationlabel">
      <x>621</x>

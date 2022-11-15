@@ -17,7 +17,5 @@ private:
 private slots:
     void on_questButton_clicked();
     void on_qlistWidget_currentItemChanged();
-    void on_deleteButton_clicked();
-
-     
+    void on_deleteButton_clicked();  
 };
