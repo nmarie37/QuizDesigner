@@ -11,10 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{CC18BBFD-4810-4E38-A9D8-8D88C1231897}</ProjectGuid>
+    <ProjectGuid>{8C1F6723-3D5B-4D29-9D0F-E8AC8561D929}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
-    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.19041.0</WindowsTargetPlatformVersion>
-    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
     <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -95,22 +95,17 @@
     </QtMoc>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <QtRcc Include="quizdesigner.qrc" />
-    <QtUic Include="adddialog.ui" />
-    <QtUic Include="addquestions.ui" />
-    <QtUic Include="quizdesigner.ui" />
-    <QtMoc Include="quizdesigner.h" />
-    <ClCompile Include="adddialog.cpp" />
-    <ClCompile Include="addquestions.cpp" />
-    <ClCompile Include="quizdesigner.cpp" />
+    <QtRcc Include="quizdesignerlatest.qrc" />
+    <QtUic Include="addquestdialog.ui" />
+    <QtUic Include="quizdesignerlatest.ui" />
+    <QtMoc Include="quizdesignerlatest.h" />
+    <ClCompile Include="addquestdialog.cpp" />
+    <ClCompile Include="quizdesignerlatest.cpp" />
     <ClCompile Include="main.cpp" />
-    <None Include="QuizDesigner.ico" />
-    <ResourceCompile Include="QuizDesigner.rc" />
-    <QtMoc Include="adddialog.h" />
-    <QtMoc Include="addquestions.h" />
-    <ClInclude Include="datastore.h" />
+    <None Include="QuizDesignerLatest.ico" />
+    <ResourceCompile Include="QuizDesignerLatest.rc" />
+    <QtMoc Include="addquestdialog.h" />
     <ClInclude Include="stdafx.h" />
-    <ClCompile Include="datastore.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">Create</PrecompiledHeader>
